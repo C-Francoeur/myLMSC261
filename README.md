@@ -1,6 +1,6 @@
 # myLMSC261
 
-##What Is Code
+## What Is Code
 - Code is essentially the language of computers.
 
 - Computers are clocks that are constantly ticking and reading data
@@ -16,16 +16,16 @@
 
 - Companies are extremely powerful when they both sell software and hardware.
 
-###What is an algorithm
-A program is used to classify and identify/name algorithms
-Algorithms fall more on the math spectrum than the code spectrum
-Algorithms can be reused many times by coders
+### What is an algorithm
+- A program is used to classify and identify/name algorithms
+- Algorithms fall more on the math spectrum than the code spectrum
+- Algorithms can be reused many times by coders
 
-###Conferences
+### Conferences
 - The abundance of tech conferences allows for programers to share ideas
 - The are a few conferences that are specifically for certain programming languages
 
-###languages
+### languages
 - Some languages are more accessible to the programmers, while others are easier for computers to read
 
 - XCode is mainly for coding apps
@@ -34,7 +34,9 @@ Algorithms can be reused many times by coders
 
 - Different languages can be used for different projects.
 
-###Debugging
+### Debugging
 - Another word for programming
 
 - Although debugging is thought to be fixing issues, fixing issues is just part of the normal process
+
+- coding is easiest when issues are fixed as they arise
