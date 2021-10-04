@@ -1,3 +1,6 @@
 x = 4
 y = 3
 print(x - y, "	Blind", "	       Mice", sep="\n")
+3
+	Blind
+	       Mice
