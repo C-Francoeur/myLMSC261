@@ -14,6 +14,5 @@ elif stacks == 6:
     print("     #/n    ##/n   ###/n  ####/n #####/n######")
 elif stacks == 7:
     print("      #/n     ##/n    ###/n   ####/n  #####/n #####/n######")
-else stacks == 8:
+elif stacks == 8:
     print("       #/n      ##/n     ###/n    ####/n   #####/n  ######/n #######/n########")
-    
