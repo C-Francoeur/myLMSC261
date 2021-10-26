@@ -25,15 +25,15 @@ I still couldn't get anything to print because I didn't know where in relation t
 
 I tried this
 
-  def func(count):
-    for i in range(count + 1):
-        if x % 3 == 0 and x % 5 == 0 :
-            print("FizzBuzz")
-        elif x % 3 == 0 :
-            print("Fizz")
-        elif x % 5 == 0 :
-            print("Buzz")
-        else print(count)
+        def func(count):
+            for i in range(count + 1):
+                if x % 3 == 0 and x % 5 == 0 :
+                    print("FizzBuzz")
+                elif x % 3 == 0 :
+                    print("Fizz")
+                elif x % 5 == 0 :
+                    print("Buzz")
+                else print(count)
 
 and This
 
