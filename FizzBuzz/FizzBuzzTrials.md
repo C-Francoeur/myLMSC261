@@ -4,20 +4,20 @@ I tried to use int(integer), but found out that I needed to use a counter instea
 
 I took the lovely code.
 
-def func(count):
-  for i in range(count + 1):
-    print(f"{count - i} Lovely!")
-///
-func(???)
+        def func(count):
+          for i in range(count + 1):
+            print(f"{count - i} Lovely!")
+        ///
+        func(???)
 
-and created some if else statements
+        and created some if else statements
 
-if x % 3 == 0 and x % 5 == 0 :
-           print("FizzBuzz")
-       elif x % 3 == 0 :
-           print("Fizz")
-       elif x % 5 == 0 :
-           print("Buzz")
+        if x % 3 == 0 and x % 5 == 0 :
+                   print("FizzBuzz")
+               elif x % 3 == 0 :
+                   print("Fizz")
+               elif x % 5 == 0 :
+                   print("Buzz")
 
 
 
@@ -56,116 +56,117 @@ After banging my head against the wall for what felt like hours I had a breakthr
 
 REMOVE THE LAST else
 
-def func(count):
-    for i in range(count + 1):
-        if x % 3 == 0 and x % 5 == 0 :
-            print("FizzBuzz")
-        elif x % 3 == 0 :
-            print("Fizz")
-        elif x % 5 == 0 :
-            print("Buzz")
-            print(count)
+        def func(count):
+            for i in range(count + 1):
+                if x % 3 == 0 and x % 5 == 0 :
+                    print("FizzBuzz")
+                elif x % 3 == 0 :
+                    print("Fizz")
+                elif x % 5 == 0 :
+                    print("Buzz")
+                    print(count)
 
 This began printing my function but I ran into a new problem. x remained undefined.
 
 Next I tried to replace x with i. My DEFINED variable. I felt like an idiot for not realizing, but once I replaced it suddenly everything began to print again.
 
-def func(count):
-    for i in range(count + 1):
-        if i % 3 == 0 and i % 5 == 0 :
-            print("FizzBuzz")
-        elif i % 3 == 0 :
-            print("Fizz")
-        elif i % 5 == 0 :
-            print("Buzz")
-            print(count)
+        def func(count):
+            for i in range(count + 1):
+                if i % 3 == 0 and i % 5 == 0 :
+                    print("FizzBuzz")
+                elif i % 3 == 0 :
+                    print("Fizz")
+                elif i % 5 == 0 :
+                    print("Buzz")
+                    print(count)
 
 This led to...
 
-FizzBuzz
-Fizz
-Buzz
-100
-Fizz
-Fizz
-Buzz
-100
+        FizzBuzz
+        Fizz
+        Buzz
+        100
+        Fizz
+        Fizz
+        Buzz
+        100
 
 This mess.
 I had A MILLION 100s, but I didn't want 100. I wanted 1-100. Then I realized I was printing the "count", NOT the integers, duhhh.
 
 So I instead tried
 
-def func(count):
-    for i in range(count + 1):
-        if i % 3 == 0 and i % 5 == 0 :
-            print("FizzBuzz")
-        elif i % 3 == 0 :
-            print("Fizz")
-        elif i % 5 == 0 :
-            print("Buzz")
-            print(i)
+        def func(count):
+            for i in range(count + 1):
+                if i % 3 == 0 and i % 5 == 0 :
+                    print("FizzBuzz")
+                elif i % 3 == 0 :
+                    print("Fizz")
+                elif i % 5 == 0 :
+                    print("Buzz")
+                    print(i)
 
 This was ALOT closer, but still was a little wonky, i.e.
 
-FizzBuzz
-Fizz
-Buzz
-5
-Fizz
-Fizz
-Buzz
-10
-Fizz
-FizzBuzz
-Fizz
-Buzz
-20
+        FizzBuzz
+        Fizz
+        Buzz
+        5
+        Fizz
+        Fizz
+        Buzz
+        10
+        Fizz
+        FizzBuzz
+        Fizz
+        Buzz
+        20
 
 My next attempt was
 
-def func(count):
-    for i in range(count + 1):
-        if i % 3 == 0 and i % 5 == 0 :
-            print("FizzBuzz")
-        elif i % 3 == 0 :
-            print("Fizz")
-        elif i % 5 == 0 :
-            print("Buzz")
-        else :
-            print(i)
+        def func(count):
+            for i in range(count + 1):
+                if i % 3 == 0 and i % 5 == 0 :
+                    print("FizzBuzz")
+                elif i % 3 == 0 :
+                    print("Fizz")
+                elif i % 5 == 0 :
+                    print("Buzz")
+                else :
+                    print(i)
 
 I almost cried...
 Just by adding a lil else statement to the end, I was able to print the WHOLE ENTIRE string of Fizzes, Buzzes, and FizzBuzzes. There was just one problem.
 
-FizzBuzz
-1
-2
-Fizz
-4
-Buzz
+        FizzBuzz
+        1
+        2
+        Fizz
+        4
+        Buzz
 
 My zero value was being print as well, so I added a little extra code.
 
-def func(count):
-    for i in range(count + 1):
-        if i == 0 :
-            print(" ")
-        elif i % 3 == 0 and i % 5 == 0 :
-            print("FizzBuzz")
-        elif i % 3 == 0 :
-            print("Fizz")
-        elif i % 5 == 0 :
-            print("Buzz")
-        else :
-            print(i)
+          def func(count):
+              for i in range(count + 1):
+                  if i == 0 :
+                      print(" ")
+                  elif i % 3 == 0 and i % 5 == 0 :
+                      print("FizzBuzz")
+                  elif i % 3 == 0 :
+                      print("Fizz")
+                  elif i % 5 == 0 :
+                      print("Buzz")
+                  else :
+                      print(i)
+
 And, BOOM!
 
-1
-2
-Fizz
-4
-Buzz
+          1
+          2
+          Fizz
+          4
+          Buzz
 
 I DID IT!!!!!
 
