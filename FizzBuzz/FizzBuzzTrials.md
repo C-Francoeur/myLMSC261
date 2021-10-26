@@ -145,7 +145,7 @@ Just by adding a lil else statement to the end, I was able to print the WHOLE EN
         4
         Buzz
 
-My zero value was being print as well, so I added a little extra code.
+My zero value was being printed as well, so I added a little extra code.
 
           def func(count):
               for i in range(count + 1):
