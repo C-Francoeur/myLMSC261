@@ -10,3 +10,4 @@ def func(count):
             print("Buzz")
         else :
             print(i)
+func(100)
