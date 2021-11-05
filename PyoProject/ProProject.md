@@ -84,12 +84,17 @@ So I changed my privacy settings and gave terminal full disk access and still...
 nothing...
 no change...
 nada...
-I quit like seriously I give up what the heck why isn't anything working it worked for everyone else so why wont it work for me seriously what am i doing wrong this is so stupid like so incredibly stupid not one good thing about it
+I quit, like seriously. I give up. What the heck?! Why isn't anything working? It worked for everyone else, so why wont it work for me?!? Seriously!!! What am i doing wrong? This is so stupid. Like, so incredibly stupid! Not one good thing about it.
+
+For the heck of it I tried this puppy out again
 
               sudo python3 setup.py install --use-coreaudio --debug
 
-For the heck of it I tried this puppy out again and still no success
+and still no success
 
-            36 warnings and 1 error generated.
+              /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareDeprecated.h:736:1: note: 'AudioDeviceRemoveIOProc' has been explicitly marked deprecated here
+                AudioDeviceRemoveIOProc(    AudioDeviceID       inDevice,
+
+                  36 warnings and 1 error generated.
 
 At this point, i've given up
